@@ -1,0 +1,78 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "bye",
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop please",
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "estado",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "EstadoComidasIntent",
+          "samples": [
+            "typical food of the state of {estado}",
+            "what do you know about food {estado}",
+            "typical food of {estado}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "region",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "RegionComidasIntent",
+          "samples": [
+            "typical food of the region  {region} ",
+            "typical food of {region}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "NombreIntent",
+          "samples": [
+            "my name is {nombre}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "typical mexican food"
+    }
+  }
+}

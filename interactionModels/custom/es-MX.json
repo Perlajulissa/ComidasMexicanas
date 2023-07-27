@@ -1,0 +1,105 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancela",
+            "cancelar"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detener",
+            "detente"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "estado",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "comida",
+              "type": "comida"
+            }
+          ],
+          "name": "EstadoComidasIntent",
+          "samples": [
+            "comenzar",
+            "{comida}",
+            "la comida que me gusto mas fue {comida}",
+            "que sabes de la comida tipica de {estado}",
+            "comida tipica del estado de {estado}",
+            "comida tipica de {estado}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "region",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "RegionComidasIntent",
+          "samples": [
+            "comida tipica de la region {region}",
+            "comida tipica de la region del {region}",
+            "comida tipica del {region}",
+            "comida tipica de la {region}",
+            "comida tipica de la region de {region}",
+            "comida tipica de {region}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "NombreIntent",
+          "samples": [
+            "{nombre}",
+            "me llamo {nombre}",
+            "mi nombre es {nombre}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "chile en nogada"
+              }
+            },
+            {
+              "name": {
+                "value": "mole negro"
+              }
+            },
+            {
+              "name": {
+                "value": "pozole verde"
+              }
+            }
+          ],
+          "name": "comida"
+        }
+      ],
+      "invocationName": "comidas típicas de  méxico"
+    }
+  }
+}
